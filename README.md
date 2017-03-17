@@ -6,8 +6,8 @@
 2. 웹 기초지식 함량 (밑의 blog들을 참조)
 3. 각자 주제 혹은 공통 주제로 시작
 
-## Client - Angular2.js jQuery
-## Server - Node.js
+- ## Client - Angular2.js jQuery
+- ## Server - Node.js
 
 # Basic-Theory
 기초이론을 배우는 단계
