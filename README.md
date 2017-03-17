@@ -1,11 +1,13 @@
 # 공지
-
 깃 공부용 텍스트 파일은 자기 폴더 만들어서 거기다 합시다!.
 
-`
-var i = 0
-`
+## 계획
+1. git 기초 및 사용법 숙달
+2. 웹 기초지식 함량 (밑의 blog들을 참조)
+3. 각자 주제 혹은 공통 주제로 시작
 
+## Client - Angular2.js jQuery
+## Server - Node.js
 
 # Basic-Theory
 기초이론을 배우는 단계
