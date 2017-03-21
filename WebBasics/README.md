@@ -1,4 +1,4 @@
-웹 기초 용어 21
+웹 기초 용어 21!
 
 http://www.wikitree.co.kr/main/news_view.php?id=255777
 
