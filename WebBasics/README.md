@@ -1,3 +1,7 @@
+웹 기초 용어 21!
+
+http://www.wikitree.co.kr/main/news_view.php?id=255777
+
 node.js install
 - http://nodeks.org.en.download/
 
@@ -13,7 +17,7 @@ http://nyears.tistory.com/26
 #3 - Event,Module,NPM  http://bcho.tistory.com/885
 #4 - 웹 개발 프레임웍 Express 1/2 - http://bcho.tistory.com/887
 
-클라이언트 
+클라이언트
 - 다른 곳에 있는 단말에 데이터를 달라고 요청하는 프로그램
 서버
 - 다른 곳에서 요청받은 명령을 처리해주는 프로그램
