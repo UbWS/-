@@ -1,3 +1,0 @@
-git add githubpt.txt
-git commit - m "Add githubpt.txt"
-git push origin master
