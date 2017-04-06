@@ -1,0 +1,21 @@
+<!--
+    {{}}은 단방향 데이터 바인딩
+    DOM <- Component
+    {{태그의 속성}} <----- 'component의title값'이 html파일 즉, view로 던져짐
+-->
+<h1>
+    {{title}}
+    </h1>
+<h2>
+    {{hero.name}}
+</h2>
+<div>
+    <label>id:</label>
+    {{hero.id}}
+</div>
+<div>
+    <label>name:</label>
+    <input value="{{hero.name}}" placeholder="name"/>
+    <!--양방향 데이터 바인딩 <h2>태그의 값이 같이 바뀐다! -->
+    <input [(ngModel)]="hero.name" placeholder="name"/>
+</div>
