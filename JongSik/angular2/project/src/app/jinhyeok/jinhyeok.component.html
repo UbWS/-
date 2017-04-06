@@ -1,3 +1,25 @@
+
+<!-- [(ngModel)]="a" 이렇게 하면 .ts파일의 변수 a에 값이 변경되는 것이다. -->
 <input type="text" name="" value="" [(ngModel)]="a">
-<p>{{a}}</p>
-<li>{{name}}</li>
+
+
+<!-- {{.ts 클래스 변수}} -->
+<!-- 변수의 값이 변하면 실시간으로 변경해준다. -->
+<table>
+  <tr>
+    <th>진혁컴포넌트</th>
+    <td>{{a}}</td>
+    <td>{{name}}</td>
+  </tr>
+  <tr>
+    <th>종식컴포넌트</th>
+    <td>{{jsName}}</td>
+  </tr>
+</table>
+
+
+<ul>
+  <li *ngFor="let c of infoJH">
+    이름: {{c.name}}   나이:{{c.age}}
+  </li>
+</ul>
