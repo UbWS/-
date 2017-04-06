@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JongsikComponent } from '../jongsik/jongsik.component';
+import { JsService } from '../js.service';
 
 @Component({
   selector: 'app-jinhyeok',
@@ -12,8 +14,12 @@ import { Component, OnInit } from '@angular/core';
 export class JinhyeokComponent implements OnInit {
   a : string = "text";
   name = 'Jinheok';
+  jsName : string ;
+  infoJH = [];
 
-  constructor() { }
+  constructor(private jsService : JsService) {
+      this.infoJH = jsService.getJHInfo();
+   }
 
   ngOnInit() {
   }
