@@ -9,6 +9,7 @@ import { JongsikComponent } from './jongsik/jongsik.component';
 import { UseServiceComponent } from './use-service/use-service.component';
 import { ServService} from './serv.service';
 import { JsService } from './js.service';
+import { HttptestComponent } from './httptest/httptest.component';
 
 @NgModule({
 
@@ -17,7 +18,8 @@ import { JsService } from './js.service';
     AppComponent,
     JinhyeokComponent,
     JongsikComponent,
-    UseServiceComponent
+    UseServiceComponent,
+    HttptestComponent
   ],
   imports: [
     BrowserModule, // 모든 애플리케이션이 브라우저를 띄우기 위해 필요한것
