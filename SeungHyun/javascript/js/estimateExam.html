@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>esimate form</title>
+    <script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript">
+      function car(){ <!-- 체크옵션 선택 시 함수 호출 -->
+        var basic_car = Number(document.getElementById("total").defaultValue);
+        // defaultValue : total에 초기 입력값을 가져옴
+        for(var i=1;i<=3;i++){
+          var chkObj = document.getElementById("opt"+i);
+          if(chkObj.checked) basic_car+=Number(chkObj.value);
+        } // 체크된 박스 확인
+
+        document.getElementById("total").value = basic_car;
+        // 체크된 박스가 있으면 추가
+      }
+      $(function(){
+        $("table").css("text-align","center").css("margin","0 auto")
+        .css("border","1px solid black").css("border-collapse","collapse");
+      }); // 표 텍스트 가운데정렬, 표 위치 가운데정렬, 테두리 설정, 테두리 여백
+      $(function(){
+        $("#carEstimate,#carImg,input").css("text-align","center");
+      }); // 이미지 가운데 정렬
+      $(function(){
+        $("th,td").css("border","1px solid black");
+      }); // 내부 테두리 설정
+    </script>
+  </head>
+  <body>
+    <h1 id="carEstimate">자동차 견적 뽑기</h1>
+    <div id="carZone">
+      <p id="carImg"><img src="../js/car1.jpg"></p>
+      <table id="estimate">
+        <colgroup> <!-- 행의 넓이 지정-->
+          <col width="380px" />
+          <col width="160px" />
+          <col width="*" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="row">옵션</th>
+            <th scope="row">추가가격</th>
+            <th scope="row">선택</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th scope="col">차량가격</th>
+            <td colspan="2">
+              <input type="text" name="total" id="total" value="13450000" readonly="readonly" />
+            </td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td><label for="opt1">인조가족시트</label></td><td>250000</td>
+            <td><input type="checkbox" name="opt1" value="2500000" id ="opt1" onclick="car();" /></td>
+          </tr>
+          <tr>
+            <td><label for="opt2">네비게이션</label></td><td>150000</td>
+            <td><input type="checkbox" name="opt2" id="opt2" value="150000" onclick="car();" /></td>
+          </tr>
+          <tr>
+            <td><label for="opt3">선루프</label></td><td>500000</td>
+            <td><input type="checkbox" name="opt3" id="opt3" value="500000" onclick="car();" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
