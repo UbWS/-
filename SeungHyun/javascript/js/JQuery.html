@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>직접 선택자</title>
+    <script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#tit").css("background-color","yellow").css("border","2px solid red");
+      }); //체이닝 기법 : 메서드 연속사용 , id선택자 : $("#아이디 명");
+      $(function(){
+        $(".tit2").css("background-color","red");
+      }); // 클래스 선택자 : $(".클래스 명");
+      $(function(){
+        $("h3").css("background-color","blue").css("color","white");
+      }); // 요소명 선택자 $("요소명");
+      $(function(){
+        $("h4,h5").css("background-color","gray");
+      }); // 그룹 선택자 $("요소1,요소2...");
+    </script>
+  </head>
+  <body>
+    <h1 id="tit">제이쿼리</h1>
+    <h2 class="tit2">직접 선택자 및 관계 선택자</h2>
+    <h3>직접 선택자</h3>
+    <h3>관계 선택자</h3>
+    <h4>그룹 선택자</h4>
+    <h5>그룹 선택자</h5>
+  </body>
+</html>
